@@ -1,10 +1,10 @@
 package ca.georgiancollege.assignment01;
 
 public class ModelTable {
-    int id, population;
+    String id, population;
     String code, name, region;
 
-    public ModelTable(int id, int population, String code, String name, String region) {
+    public ModelTable(String id, String population, String code, String name, String region) {
         this.id = id;
         this.population = population;
         this.code = code;
@@ -12,11 +12,11 @@ public class ModelTable {
         this.region = region;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setPopulation(int population) {
+    public void setPopulation(String population) {
         this.population = population;
     }
 
@@ -32,11 +32,11 @@ public class ModelTable {
         this.region = region;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public int getPopulation() {
+    public String getPopulation() {
         return population;
     }
 
