@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("vector2d-chartview.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Calculate Vector2D Distance");
+        stage.setTitle("World Population Data");
         Image icon = new Image(getClass().getResourceAsStream("icon.png"));
         stage.getIcons().add(icon);
         stage.setScene(scene);
