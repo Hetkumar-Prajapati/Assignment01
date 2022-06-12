@@ -1,19 +1,18 @@
 package ca.georgiancollege.assignment01;
 
 public class ModelTable {
-    String id, population;
-    String code, name, region;
+    String continent, population, code, name, region;
 
-    public ModelTable(String id, String population, String code, String name, String region) {
-        this.id = id;
+    public ModelTable(String continent, String population, String code, String name, String region) {
+        this.continent = continent;
         this.population = population;
         this.code = code;
         this.name = name;
         this.region = region;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setContinent(String continent) {
+        this.continent = continent;
     }
 
     public void setPopulation(String population) {
@@ -32,8 +31,8 @@ public class ModelTable {
         this.region = region;
     }
 
-    public String getId() {
-        return id;
+    public String getContinent() {
+        return continent;
     }
 
     public String getPopulation() {

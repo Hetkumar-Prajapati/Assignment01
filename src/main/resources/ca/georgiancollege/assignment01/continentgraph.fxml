@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.assignment01.RegionalGraphController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.assignment01.ContinentGraphController">
     <children>
         <BorderPane layoutX="200.0" layoutY="90.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
-                <Label text="Regional Population" BorderPane.alignment="CENTER">
+                <Label text="Continent Population" BorderPane.alignment="CENTER">
                     <font>
                         <Font name="System Bold Italic" size="16.0" />
                     </font></Label>
@@ -28,7 +28,7 @@
             <bottom>
                 <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER_RIGHT">
                     <children>
-                        <RadioButton mnemonicParsing="false" onAction="#continentgraph" prefHeight="19.0" prefWidth="172.0" text="Continent Population">
+                        <RadioButton mnemonicParsing="false" onAction="#regionalgrah" prefHeight="19.0" prefWidth="172.0" text="Regional Population">
                             <font>
                                 <Font name="System Bold" size="13.0" />
                             </font>

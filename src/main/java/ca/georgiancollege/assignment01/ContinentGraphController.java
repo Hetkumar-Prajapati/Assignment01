@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class RegionalGraphController implements Initializable {
+public class ContinentGraphController implements Initializable {
 
     @FXML
     private BarChart<String , Float> barChart;
@@ -34,10 +34,11 @@ public class RegionalGraphController implements Initializable {
         SceneManager.Instance().changeScene(event, "chartview.fxml");
     }
     @FXML
-    private void continentgraph(ActionEvent event) throws IOException
+    private void regionalgrah(ActionEvent event) throws IOException
     {
-        SceneManager.Instance().changeScene(event, "continentgraph.fxml");
+        SceneManager.Instance().changeScene(event, "regionalgrah.fxml");
     }
+
 
 
     @Override
@@ -45,12 +46,9 @@ public class RegionalGraphController implements Initializable {
 
         XYChart.Series<String, Float> series = new XYChart.Series<>();
         series.setName("Population Comparison");
-        series.getData().add(new XYChart.Data<>("ZWE" ,178000f));
-        series.getData().add(new XYChart.Data<>("PSE" ,237500f));
-        series.getData().add(new XYChart.Data<>("NLD" ,186800f));
-        series.getData().add(new XYChart.Data<>("AGF" ,93321f));
-        series.getData().add(new XYChart.Data<>("ZAE" ,231200f));
-
+        series.getData().add(new XYChart.Data<>("Asia" ,178000f));
+        series.getData().add(new XYChart.Data<>("Europe" ,237500f));
+        series.getData().add(new XYChart.Data<>("Netherlands" ,186800f));
         barChart.getData().add(series);
 
     }

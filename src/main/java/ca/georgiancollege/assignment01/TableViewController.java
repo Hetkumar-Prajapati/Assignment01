@@ -19,7 +19,7 @@ public class TableViewController implements Initializable {
     private TableColumn<ModelTable,String> code;
 
     @FXML
-    private TableColumn<ModelTable,String> id;
+    private TableColumn<ModelTable,String> continent;
 
     @FXML
     private TableColumn<ModelTable,String> name;
@@ -34,20 +34,34 @@ public class TableViewController implements Initializable {
     private TableView<ModelTable> table;
 
     ObservableList<ModelTable> list = FXCollections.observableArrayList(
-            new ModelTable("4073", "1780000","ZWE","Kabul","Midlands"),
-            new ModelTable("4074", "237500","PSE","Qandahar","Rafah"),
-            new ModelTable("4075", "186800","ZWE","Herat","Midlands"),
-            new ModelTable("4077", "127800","ZPSE","Mazar-e-Sharif","North gaza"),
-            new ModelTable("4078", "731200","NLD","Amsterdam","Rafah"),
-            new ModelTable("4079", "593321","ZWE","Rotterdam","North gaza"),
-            new ModelTable("4080", "440900","NLD","Haag","Midlands"),
-            new ModelTable("4081", "234323","AGF","Utrecht","North gaza"),
-            new ModelTable("4082", "201843","NLD","Eindhoven","Rafah"),
-            new ModelTable("4083", "193238","AGF","Tilburg","North gaza"),
-            new ModelTable("4084", "172701","ZWE","Groningen","Midlands"),
-            new ModelTable("4085", "160398","NLD","Breda","North gaza"),
-            new ModelTable("4086", "153491","ZWE","Apeldoorn","Rafah"),
-            new ModelTable("4087", "152463","ZWAGFE","Almere","Midlands")
+            new ModelTable("Asia", "1780000","ZWE","Kabul","Midlands"),
+            new ModelTable("Asia", "237500","PSE","Qandahar","Rafah"),
+            new ModelTable("Asia", "186800","ZWE","Herat","Midlands"),
+            new ModelTable("Asia", "127800","ZPSE","Mazar-e-Sharif","North gaza"),
+            new ModelTable("Europe", "731200","NLD","Amsterdam","Rafah"),
+            new ModelTable("Europe", "593321","ZWE","Rotterdam","North gaza"),
+            new ModelTable("Europe", "440900","NLD","Haag","Midlands"),
+            new ModelTable("Europe", "234323","AGF","Utrecht","North gaza"),
+            new ModelTable("Europe", "201843","NLD","Eindhoven","Rafah"),
+            new ModelTable("Netherlands", "193238","AGF","Tilburg","North gaza"),
+            new ModelTable("Netherlands", "172701","ZWE","Groningen","Midlands"),
+            new ModelTable("Netherlands", "160398","NLD","Breda","North gaza"),
+            new ModelTable("Netherlands", "153491","ZWE","Apeldoorn","Rafah"),
+            new ModelTable("Netherlands", "152463","ZWAGFE","Almere","Midlands"),
+            new ModelTable("Asia", "1780000","ZWE","Kabul","Midlands"),
+            new ModelTable("Asia", "237500","PSE","Qandahar","Rafah"),
+            new ModelTable("Asia", "186800","ZWE","Herat","Midlands"),
+            new ModelTable("Asia", "127800","ZPSE","Mazar-e-Sharif","North gaza"),
+            new ModelTable("Europe", "731200","NLD","Amsterdam","Rafah"),
+            new ModelTable("Europe", "593321","ZWE","Rotterdam","North gaza"),
+            new ModelTable("Europe", "440900","NLD","Haag","Midlands"),
+            new ModelTable("Europe", "234323","AGF","Utrecht","North gaza"),
+            new ModelTable("Europe", "201843","NLD","Eindhoven","Rafah"),
+            new ModelTable("Netherlands", "193238","AGF","Tilburg","North gaza"),
+            new ModelTable("Netherlands", "172701","ZWE","Groningen","Midlands"),
+            new ModelTable("Netherlands", "160398","NLD","Breda","North gaza"),
+            new ModelTable("Netherlands", "153491","ZWE","Apeldoorn","Rafah"),
+            new ModelTable("Netherlands", "152463","ZWAGFE","Almere","Midlands")
     );
 
     @Override
@@ -71,7 +85,7 @@ public class TableViewController implements Initializable {
      */
 
 
-        id.setCellValueFactory(new PropertyValueFactory<ModelTable,String>("id"));
+        continent.setCellValueFactory(new PropertyValueFactory<ModelTable,String>("continent"));
         name.setCellValueFactory(new PropertyValueFactory<ModelTable,String>("name"));
         code.setCellValueFactory(new PropertyValueFactory<ModelTable,String>("code"));
         region.setCellValueFactory(new PropertyValueFactory<ModelTable,String>("region"));

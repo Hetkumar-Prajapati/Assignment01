@@ -33,6 +33,11 @@ public class ChartViewController implements Initializable {
     {
         SceneManager.Instance().changeScene(event, "regionalgraph.fxml");
     }
+    @FXML
+    private void continentgraph(ActionEvent event) throws IOException
+    {
+        SceneManager.Instance().changeScene(event, "continentgraph.fxml");
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb){

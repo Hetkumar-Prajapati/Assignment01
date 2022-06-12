@@ -28,6 +28,11 @@
             <bottom>
                 <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER_RIGHT">
                     <children>
+                        <RadioButton mnemonicParsing="false" onAction="#continentgraph" prefHeight="17.0" prefWidth="176.0" text="Continent Population">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </RadioButton>
                   <RadioButton mnemonicParsing="false" onAction="#regionalgraph" prefHeight="17.0" prefWidth="176.0" text="Regional Population">
                      <font>
                         <Font name="System Bold" size="12.0" />
